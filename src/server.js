@@ -116,6 +116,8 @@ var SampleApp = function() {
         self.app = express.createServer();
 
         self.app.use('/scripts', express.static('scripts'));
+        self.app.use('/styles', express.static('styles'));
+        self.app.use('/assets', express.static('assets'));
 
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
