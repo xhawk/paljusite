@@ -1,7 +1,9 @@
 {
   "name": "paljusite",
-  "version": "0.0.0",
-  "dependencies": {},
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "~3.4.4"
+  },
   "scripts": {
     "test": "gulp test"
   },
@@ -49,9 +51,30 @@
     "http-proxy-middleware": "~0.0.5",
     "chalk": "~1.0.0",
     "uglify-save-license": "~0.4.1",
-    "wrench": "~1.5.8"
+    "wrench": "~1.5.8",
+    "gulp-gh-pages": "^0.5.2"
   },
   "engines": {
-    "node": ">=0.10.0"
-  }
+    "node": ">=0.10.0",
+    "npm": ">= 1.0.0"
+  },
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "Tomi Savolainen",
+    "email": "tomi@tomisavolainen.net",
+    "url": "http://tomisavolainen.net/"
+  },
+  "homepage": "http://www.tjpalju.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js"
 }

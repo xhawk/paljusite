@@ -27,3 +27,13 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
+
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({
+      remoteUrl: "ssh://55c9d5837628e16374000121@tjpalju-xhawk.rhcloud.com/~/git/tjpalju.git",
+      branch: "master"
+  }));
+});
