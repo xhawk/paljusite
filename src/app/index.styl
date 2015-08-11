@@ -10,6 +10,9 @@
 html
   font-family 'Roboto Slab', serif
 
+html, body
+  100%
+
 [layout=row]
   flex-direction row
 
@@ -30,8 +33,19 @@ md-toolbar
     background-color black
 
 md-content
-  &.md-default-theme
+  height 100%
+
+md-content
+  &.background
     background-image url("/assets/images/palju/IMG-20150803-WA0000.jpg")
+    background-size cover
+    background-repeat no-repeat
+
+
+.hero
+  h1
+    font-size 6em
+    text-align center
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
