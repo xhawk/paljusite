@@ -11,7 +11,6 @@
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
       scope: {
-          creationDate: '='
       },
       controller: NavbarController,
       controllerAs: 'navbar',
@@ -30,7 +29,6 @@
 
       function closeNav() {
         $mdSidenav('left').close();
-        console.log("asd")
       }
     }
   }
