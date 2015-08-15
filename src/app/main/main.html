@@ -1,10 +1,32 @@
 <div layout="column">
   <md-toolbar>
-    <div class="md-toolbar-tools">
+    <div class="md-toolbar-tools" hide-sm>
       <md-button class="primary" aria-label="Settings"><a href="#/#top">TJ Palju</a></md-button>
       <md-button aria-label="Settings"><a href="#/#price">Hinnat</a></md-button>
       <md-button aria-label="Settings"><a href="#/#pics">Kuvat</a></md-button>
       <md-button aria-label="Settings"><a href="#/#instructions">Ohjeet</a></md-button>
+    </div>
+    <div class="md-toolbar-tools" hide-gt-sm>
+      <md-menu>
+        <md-button ng-click="$mdOpenMenu($event)" class="primary md-icon-button" aria-label="Settings">
+          <md-icon md-menu-origin md-font-set="material-icons">menu</md-icon>
+        </md-button>
+        <md-menu-content md-menu-width="4">
+          <md-menu-item>
+            <md-button aria-label="Alkuun"><a href="#/#top">TJ Palju</a></md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="Hinnat"><a href="#/#price">Hinnat</a></md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="Kuvat"><a href="#/#pics">Kuvat</a></md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="Ohjeet"><a href="#/#instructions">Ohjeet</a></md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+      <span flex></span>
     </div>
   </md-toolbar>
 
@@ -61,8 +83,8 @@
 
       <h3>Hyvä muistaa talvella</h3>
       <p>Älä päästä vettä jäätymään paljuun tai kaminaan. Jäätynyt vesi rikkoo paljun sekä kaminan. Jäätynyttä kaminaa tai paljua ei saa missään nimessä yrittää sulattaa lämmittämällä. Tyhjennä palju ja kamina talvella käytön jälkeen ettei vesi pääse jäätymään.</p>
-
-      <h3>Mukavia kylpyhetkiä!</h3>
+      <br/>
+      <h2>Mukavia kylpyhetkiä!</h2>
     </section>
   </md-content>
 </div>

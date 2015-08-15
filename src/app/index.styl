@@ -31,24 +31,19 @@ body
     &.pull-right
       width 50px
 
-color-pri0 = #FF9400
-color-pri1 = #FFB34B
-color-pri2 = #FF9E18
-color-pri3 = #D37A00
-color-pri4 = #A45F00
-color-pri5 = #8E4D00
+color-pri0 = #2F50CB
+color-pri1 = #778DE0
+color-pri2 = #506CD4
+color-pri3 = #1036C1
+color-pri4 = #0C288B
 
-color-sec1-0 = #FFC000
-color-sec1-1 = #FFD34B
-color-sec1-2 = #FFC618
-color-sec1-3 = #D39F00
-color-sec1-4 = #A47C00
+color-sec1-0 = #FFBB21
+color-sec1-1 = #FFD677
+color-sec1-2 = #FFC84B
+color-sec1-3 = #FFB100
+color-sec1-4 = #CE8F00
 
-color-sec2-0 = #FF4C00
-color-sec2-1 = #FF814B
-color-sec2-2 = #FF5D18
-color-sec2-3 = #D33F00
-color-sec2-4 = #A43100
+red = #df0a0a
 
 white = #ffffea
 
@@ -64,12 +59,6 @@ white = #ffffea
 .color-sec1-3 { color: color-sec1-3 }
 .color-sec1-4 { color: color-sec1-4 }
 
-.color-sec2-0 { color: color-sec2-0 }	/* Main Secondary color (2) */
-.color-sec2-1 { color: color-sec2-1 }
-.color-sec2-2 { color: color-sec2-2 }
-.color-sec2-3 { color: color-sec2-3 }
-.color-sec2-4 { color: color-sec2-4 }
-
 md-toolbar
   &.md-default-theme
     background-color color-pri4
@@ -81,7 +70,7 @@ md-content
     background-repeat no-repeat
     background-position center
     color white
-    text-shadow 2px 1px color-pri4
+    text-shadow 2px 1px color-sec1-4
     text-align center
 
 .md-toolbar-tools
@@ -111,11 +100,16 @@ h3
   padding-left 2em
 
 .price
-  color color-sec2-4
+  color red
   font-weight bold
 
 .ng-scope
   height 100%
+
+.menudemoBasicUsage .md-menu-demo {
+  padding: 24px; }
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
