@@ -65,20 +65,23 @@ md-toolbar
 
 md-content
   .background
-    background-image url("/assets/images/palju/IMG-20150803-WA0000 copy.jpg")
+    background-image url("/assets/images/background-b.jpg")
     background-size cover
     background-repeat no-repeat
     background-position center
-    color white
-    text-shadow 2px 1px color-sec1-4
     text-align center
+    height 91vh
 
 .md-toolbar-tools
+  a
+    color color-sec1-1
   .primary
     font-style bold
     font-size 1.25em
+
+.md-open-menu-container
   a
-    color color-sec1-1
+    color color-sec1-3
 
 .hero
   min-height 800px
@@ -86,8 +89,27 @@ md-content
   h1
     font-size 5em
     text-align center
+    text-shadow 2px 1px color-sec1-4
     color color-sec1-2
     padding-bottom 0.4em
+  p
+    text-shadow 2px 1px color-pri2
+    color white
+
+.herosmall
+  min-height 800px
+  font-size 1.5em
+  h1
+    font-size 4em
+    text-align center
+    text-shadow 2px 1px color-sec1-4
+    color color-sec1-2
+    padding-bottom 0.4em
+    margin-top 0
+    margin-bottom 0.5em
+  p
+    text-shadow 2px 1px color-pri2
+    color white
 
 h2
   color color-pri4
@@ -105,11 +127,6 @@ h3
 
 .ng-scope
   height 100%
-
-.menudemoBasicUsage .md-menu-demo {
-  padding: 24px; }
-.menudemoBasicUsage .menu-demo-container {
-  min-height: 200px; }
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
