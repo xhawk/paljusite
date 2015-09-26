@@ -4,6 +4,7 @@
       <md-button class="primary" aria-label="Settings"><a href="#/#top">TJ Palju</a></md-button>
       <md-button aria-label="Settings"><a href="#/#price">Hinnat</a></md-button>
       <md-button aria-label="Settings"><a href="#/#pics">Kuvat</a></md-button>
+      <md-button aria-label="Settings"><a href="#/#contact">Yhteystiedot</a></md-button>
       <md-button aria-label="Settings"><a href="#/#instructions">Ohjeet</a></md-button>
     </div>
     <div class="md-toolbar-tools" hide-gt-sm>
@@ -20,6 +21,9 @@
           </md-menu-item>
           <md-menu-item>
             <md-button aria-label="Kuvat"><a href="#/#pics">Kuvat</a></md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="Yhteystiedot"><a href="#/#contact">Yhteystiedot</a></md-button>
           </md-menu-item>
           <md-menu-item>
             <md-button aria-label="Ohjeet"><a href="#/#instructions">Ohjeet</a></md-button>
@@ -52,7 +56,9 @@
           <li>Yksi vuorokausi viikonloppuna (pe-su): <span class="price">80€</span></li>
           <li>Koko viikko (7 päivää): <span class="price">250€</span></li>
           <li>Arki vuorokausi (ma-to): <span class="price">50€</span></li>
-          <li>Muu aika sopimuksen mukaan: <span class="price">soita!</span></li>
+          <li>Muu aika sopimuksen mukaan: <span class="price">
+            <a href="tel:+358445597099">soita!</a>
+          </span></li>
         </ul>
       </div>
     </section>
@@ -80,6 +86,36 @@
             <a href="/assets/images/palju/IMG-20150803-WA0006.jpg"><img src="/assets/images/palju/IMG-20150803-WA0006_tn.jpg" /></a>
           </md-grid-tile>
         </md-grid-list>
+      </div>
+    </section>
+
+    <section layout="row" id="contact" class="content" offset-gt-sm="20">
+      <div layout="column" flex-gt-sm="60">
+        <h2>Yhteystiedot</h2>
+        <md-list class="phone-md" hide-sm>
+          <md-list-item class="phone">
+            <md-icon style="font-size: 48px;">call</md-icon>
+            <div>
+              <h4>+358 44 559 7099</h4>
+              <p>Jukka</p>
+            </div>
+          </md-list-item>
+          <md-list-item class="phone">
+            <md-icon style="font-size: 48px;">call</md-icon>
+            <div>
+              <h4>+358 44 537 0005</h4>
+              <p>Tomi</p>
+            </div>
+          </md-list-item>
+        </md-list>
+        <md-list class="numbers-sm" hide-gt-sm>
+          <md-list-item class="phone">
+            <a href="tel:+358445597099"><md-icon style="font-size: 48px;">call</md-icon><p>Jukka</p></a>
+          </md-list-item>
+          <md-list-item class="phone">
+            <a href="tel:+358445370005"><md-icon style="font-size: 48px;">call</md-icon><p>Tomi</p></a>
+          </md-list-item>
+        </md-list>
       </div>
     </section>
 
