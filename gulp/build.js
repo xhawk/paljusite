@@ -40,6 +40,12 @@ gulp.task('html', ['inject', 'partials'], function () {
 
   return gulp.src(path.join(conf.paths.tmp, '/serve/*.html'))
     .pipe($.inject(partialsInjectFile, partialsInjectOptions))
+    .pipe($.inject(gulp.src('./ga.js'), {
+      starttag: '<!-- inject:ga:{{ext}} -->',
+      transform: function(filePath, file) {
+        console.log(filePath);
+        return file.contents.toString('utf8');
+      }}))
     .pipe(assets = $.useref.assets())
     .pipe($.rev())
     .pipe(jsFilter)
@@ -59,8 +65,7 @@ gulp.task('html', ['inject', 'partials'], function () {
       quotes: true,
       conditionals: true
     }))
-    .pipe(htmlFilter.restore())
-    .pipe(gulp.dest(path.join(conf.paths.dist, '/')))
+    .pipe(htmlFilter.restore())    .pipe(gulp.dest(path.join(conf.paths.dist, '/')))
     .pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
 });
 
